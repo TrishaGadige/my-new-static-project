@@ -1,0 +1,170 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Website title */
+header h1 {
+    font-size: 28px;
+}
+
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+/* Home section */
+.hero {
+    background-color: #00bcd4;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: white;
+    color: #00a0b5;
+
+    padding: 12px 25px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.button:hover {
+    background-color: #222;
+    color: white;
+}
+
+
+/* General sections */
+.section {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+/* Cards container */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* Individual cards */
+.card {
+    background-color: white;
+    width: 250px;
+
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h3 {
+    color: #00a0b5;
+    margin-bottom: 10px;
+}
+
+
+/* Contact */
+.contact {
+    background-color: #ddd;
+}
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Mobile screen */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
